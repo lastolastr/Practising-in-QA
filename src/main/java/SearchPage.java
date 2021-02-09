@@ -5,8 +5,6 @@ public class SearchPage {
 
     private WebDriver driver;
 
-    private By text = By.xpath("");
-
     public SearchPage(WebDriver driver) {
 
         this.driver = driver;
@@ -20,4 +18,5 @@ public class SearchPage {
         return heading;
 
     }
+
 }
