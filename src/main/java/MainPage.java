@@ -1,5 +1,7 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class MainPage {
 
@@ -12,21 +14,25 @@ public class MainPage {
     private By searchField= By.xpath("//input[@id=\"search-form-field\"]");
     private By searchButton= By.xpath("//button[@id=\"search-form-btn\"]");
 
-    public MainPage typeSearch(String search){
-        driver.findElement(searchField).sendKeys(search);
-        return this;
-    }
-    // переписать все методы
-    // не делать заимосвязи
-    public MainPage searchClick(){
+
+
+    public SearchPage typeSearch(String search){
         driver.findElement(searchButton).click();
-        return this;
+        driver.findElement(searchField).sendKeys(search);
+        driver.findElement(searchField).sendKeys(Keys.RETURN);
+        return new SearchPage (driver);
     }
-    
-    public SearchPage searchInform(String search){
-        this.typeSearch(search);
-        return new SearchPage(driver);
-    }
+//     переписать все методы
+//     не делать заимосвязи
+//    public MainPage searchClick(){
+//        driver.findElement(searchButton).click();
+//        return this;
+//    }
+
+//    public SearchPage searchInform(String search){
+//        this.typeSearch(search);
+//        return new SearchPage(driver);
+//    }
 
 
 
