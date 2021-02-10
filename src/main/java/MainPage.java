@@ -22,8 +22,7 @@ public class MainPage {
         driver.findElement(searchField).sendKeys(Keys.RETURN);
         return new SearchPage (driver);
     }
-//     переписать все методы
-//     не делать заимосвязи
+
 //    public MainPage searchClick(){
 //        driver.findElement(searchButton).click();
 //        return this;

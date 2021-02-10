@@ -15,7 +15,7 @@
         <maven-surefire-plugin.version>2.20.1</maven-surefire-plugin.version>
         <aspectj.version>1.8.10</aspectj.version>
         <allure-junit4.version>2.6.0</allure-junit4.version>
-
+        <aspectj.version>1.8.10</aspectj.version>
 
     </properties>
 
@@ -26,14 +26,12 @@
          <version>3.141.59</version>
      </dependency>
 
-<!--    &lt;!&ndash; https://mvnrepository.com/artifact/io.qameta.allure/allure-junit4 &ndash;&gt;-->
 <!--     <dependency>-->
 <!--         <groupId>io.qameta.allure</groupId>-->
-<!--         <artifactId>allure-junit4</artifactId>-->
-<!--         <version>2.13.5</version>-->
+<!--         <artifactId>allure-testng</artifactId>-->
+<!--         <version>${allure.version}</version>-->
 <!--         <scope>test</scope>-->
 <!--     </dependency>-->
-
 
      <!-- https://mvnrepository.com/artifact/junit/junit -->
      <dependency>
@@ -42,7 +40,6 @@
          <version>4.13</version>
          <scope>test</scope>
      </dependency>
-
 
  </dependencies>
 
